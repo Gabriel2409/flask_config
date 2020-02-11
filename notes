@@ -1,0 +1,11 @@
+To create my venv: 
+python -m venv env 
+
+to activate it
+env\Scripts\activate
+
+then pip install --upgrade pip
+SET FLASK_ENV=development
+SET FLASK_APP=run.py
+
+

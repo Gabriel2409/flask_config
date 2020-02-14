@@ -1,4 +1,9 @@
+
 To create my venv: 
+-----
+Anaconda version: 
+in cmd prompt:
+conda activate
 python -m venv env 
 
 to activate it
@@ -8,4 +13,45 @@ then pip install --upgrade pip
 SET FLASK_ENV=development
 SET FLASK_APP=run.py
 
+------
+Linux version with WSL
+in wsl bash prompt:
+virtualenv env2
 
+to activate it
+source env/bin/activate
+
+then pip install --upgrade pip
+export FLASK_ENV=development
+export FLASK_ENV=development
+------ 
+
+
+To create requirements.txt :requirements.txt: pip freeze > requirements.txt
+If i want to install requirements: pip install -r requirements.txt
+
+In .vscode:settings.json: 
+{
+	"highlight.regexes": {
+		"({[{%]*\\s*)([^}%]+)(\\s*[}%]})": {
+			"filterLanguageRegex": "html",
+			"decorations": [
+				{
+					"color": "#ff0"
+				},
+				{
+					"color": "#30e81e"
+				},
+				{ "color": "#ff0" }
+			]
+		},
+		"(<\\S+>)": {
+			"filterLanguageRegex": "py",
+			"decorations": [
+				{
+					"color": "#fff"
+				}
+			]
+		}
+	}
+}

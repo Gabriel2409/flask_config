@@ -16,7 +16,8 @@ SET FLASK_APP=run.py
 ------
 Linux version with WSL
 in wsl bash prompt:
-virtualenv env2
+virtualenv env2 for older versions
+python3.8 -m venv env2 for newer versions
 
 to activate it
 source env/bin/activate

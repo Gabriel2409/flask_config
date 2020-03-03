@@ -20,11 +20,17 @@ virtualenv env2 for older versions
 python3.8 -m venv env2 for newer versions
 
 to activate it
-source env/bin/activate
+source env2/bin/activate
 
 then pip install --upgrade pip
 export FLASK_ENV=development
 export FLASK_ENV=development
+------ 
+Linux version with pipenv
+pipenv install <package-name>
+pipenv shell to activate it
+To deactivate the env, run exit 
+https://pipenv-fork.readthedocs.io/en/latest/basics.html
 ------ 
 
 
